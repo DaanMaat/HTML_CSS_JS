@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+h2{
+    color: yellow;
+}
+
+h3{
+    color: red;
+    font-size: 23px;
+}
+
+h4{
+    color: blue;
+    font-size: 23px;
+}
+
+h5{
+    font-size: 23px;
+    color: green;
+}
+
+h6{
+    font-size: 23px;
+    color: white;
+}
+
+.-Seven{
+    font-size: 23px;
+    color: purple;
+}
+
+.-Eight{
+    font-size: 23px;
+    color: gray;
+}
+
+.-Nine{
+    font-size: 23px;
+    color: pink;
+}
+
+.-Ten{
+    font-size: 23px;
+    color: orange;
+}
+
+.One{
+    background-color: yellow;
+    width: 33.3%;
+    height: 33.3%;
+    text-align: center;
+    float: left;
+}
+
+.Two{
+    background-color: red;
+    width: 33.3%;
+    height: 33.3%;
+    text-align: center;
+    float: left;
+}
+.Three{
+    background-color: blue;
+    width: 33.3%;
+    height: 33.3%;
+    text-align: center;
+    float: left;
+}
+
+.Four{
+    background-color: green;
+    width: 33.3%;
+    height: 33.3%;
+    text-align: center;
+    float: left;
+}
+
+.Five{
+    background-color: white;
+    width: 33.3%;
+    height: 33.3%;
+    text-align: center;
+    float: left;
+}
+.Six{
+    background-color: purple;
+    width: 33.3%;
+    height: 33.3%;
+    text-align: center;
+    float: left;
+}
+
+.Seven{
+    background-color: Gray;
+    width: 33.3%;
+    height: 33.3%;
+    text-align: center;
+    float: left;
+}
+
+.Eight{
+    background-color: pink;
+    width: 33.3%;
+    height: 33.3%;
+    text-align: center;
+    float: left;
+}
+
+.Nine{
+    background-color: orange;
+    width: 33.3%;
+    height: 33.3%;
+    text-align: center;
+    float: left;
+}
