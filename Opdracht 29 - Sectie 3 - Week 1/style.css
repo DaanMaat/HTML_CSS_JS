@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.plaatje{
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+}
+
+img{
+    position: absolute;
+    top: 250px;
+    right: 250px;
+    bottom: 250px;
+    left: 250px;
+}
