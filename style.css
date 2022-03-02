@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tot-score-box{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(153, 153, 153);
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+.yathzeeTafel{
+    position: absolute;
+    left: 20vw;
+    top: 20vh;
+    width: 60%;
+    height: 70%;
+    border-radius: 20%;
+    background-color: rgb(97, 58, 0);
+}
+
+.scorebox1, .scorebox2{
+    background-color: rgb(153, 153, 153);
+    width: 18%;
+    height: 100%;
+}
+
+.scorebox1{
+    position: absolute;
+    left: 0;
+    top: 15vh;    
+}
+.scorebox2{
+    position: absolute;
+    right: 0;
+    top: 15vh;    
+}
+
+h1{
+    font-size: 80px;
+}
+div{
+    display: inline-block;
+}
+
+.p1, .p2{
+    position: absolute;
+    font-size: x-large;
+}
+.p1{
+    left: 100px;
+    top: 40px;
+}
+.p2{
+    right: 100px;
+    top: 40px;
+}
+.scorekaart-1{
+    display: grid;
+    grid-template-rows: 21;
+    grid-template-columns: 5;
+}
+.scorekaart-2{
+    display: grid;
+    grid-template-rows: 21;
+    grid-template-columns: 5;
+}
+.score{
+    height: 45px;
+    border: black solid 2px;
+    background-color: #FFFFFF;
+    
+}
+.dice{
+    width: 35px;
+    height: 35px;
+}
+.additional-info{
+    display: flex;
+}
