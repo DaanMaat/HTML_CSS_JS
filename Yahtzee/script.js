@@ -1,9 +1,11 @@
 'use strict'
 
-const Player1 = prompt('Type de naam van player 1');
-const Player2 = prompt('Type de naam van player 2');
-document.querySelector('.p1').textContent = `${Player1}`;
-document.querySelector('.p2').textContent = `${Player2}`;
+// const Player1 = prompt('Type de naam van player 1');
+// const Player2 = prompt('Type de naam van player 2');
+// document.querySelector('.p1').textContent = `${Player1}`;
+// document.querySelector('.p2').textContent = `${Player2}`;
+let Dices = [0, 0, 0 ,0 ,0]
+let holdDices = [0, 0, 0, 0, 0];
 const turn = document.querySelector('#turn');
 let turnSelector = Math.floor(Math.random()*5)+1;
 let rollsLeft = 3;
@@ -48,57 +50,69 @@ let p2GStraat = 0;
 let p2Yahtzee = 0;
 let p2Chance = 0;
 
+const D1 = document.querySelector('.dice1');
+const D2 = document.querySelector('.dice2');
+const D3 = document.querySelector('.dice3');
+const D4 = document.querySelector('.dice4');
+const D5 = document.querySelector('.dice5');
 
-const Dice1 = Math.floor(Math.random()*6)+1;
-const Dice2 = Math.floor(Math.random()*6)+1;
-const Dice3 = Math.floor(Math.random()*6)+1;
-const Dice4 = Math.floor(Math.random()*6)+1;
-const Dice5 = Math.floor(Math.random()*6)+1;
-const Dice6 = Math.floor(Math.random()*6)+1;
 
-// function turnFunction(){
-// switch(turnSelector){
-//     case 1:
+D1.addEventListener('click', function(){
+    if(D1.classList.contains('notSelected')){
+        D1.classList.remove('notSelected');
+    } else {D1.classList.add('notSelected');
+}});
+D2.addEventListener('click', function(){
+    if(D2.classList.contains('notSelected')){
+        D2.classList.remove('notSelected');
+    } else {D2.classList.add('notSelected');
+}});
+D3.addEventListener('click', function(){
+    if(D3.classList.contains('notSelected')){
+        D3.classList.remove('notSelected');
+    } else {D3.classList.add('notSelected');
+}});
+D4.addEventListener('click', function(){
+    if(D4.classList.contains('notSelected')){
+        D4.classList.remove('notSelected');
+    } else {D4.classList.add('notSelected');
+}});
+D5.addEventListener('click', function(){
+    if(D5.classList.contains('notSelected')){
+        D5.classList.remove('notSelected');
+    } else {D5.classList.add('notSelected');
+}});
+
+rollButton.addEventListener('click', function(){
+    Dices[0] = Math.floor(Math.random()*6)+1;
+    Dices[1] = Math.floor(Math.random()*6)+1;
+    Dices[2] = Math.floor(Math.random()*6)+1;
+    Dices[3] = Math.floor(Math.random()*6)+1;
+    Dices[4] = Math.floor(Math.random()*6)+1;
+    D1.src = `Dice${Dices[0]}.png`
+    D2.src = `Dice${Dices[1]}.png`
+    D3.src = `Dice${Dices[2]}.png`
+    D4.src = `Dice${Dices[3]}.png`
+    D5.src = `Dice${Dices[4]}.png`
+    if(holdDices == 0){
+        
+    }
+    console.log(Dices);
+    
+});
+
+
+// if (turnSelector % 2 == 0){
 //     turn.textContent = `${Player1} is aan de beurt, succes!`;
 //     rollButton.textContent = `Worpen over: ${rollsLeft}`;
 //     rollButton.addEventListener('click', function(){
 //         rollsLeft--;
 //         rollButton.textContent = `Worpen over: ${rollsLeft}`;
 //     });
-// break;
-// case 2:
+// }else{
 //     turn.textContent = `${Player2} is aan de beurt, succes!`;
 //         rollButton.textContent = `Worpen over: ${rollsLeft}`;
 //     rollButton.addEventListener('click', function(){
 //         rollsLeft--;
 //         rollButton.textContent = `Worpen over: ${rollsLeft}`;
 //     })};
-//     break;
-// }
-
-// if(turnSelector == 1){
-//     nextTurnButton.addEventListener('click', function(){
-//         turnSelector++;
-//         turnFunction();
-//     });
-// } else {
-//     nextTurnButton.addEventListener('click', function(){
-//         turnSelector--;
-//         turnFunction();
-//     })
-// }
-
-if (turnSelector % 2 == 0){
-    turn.textContent = `${Player1} is aan de beurt, succes!`;
-    rollButton.textContent = `Worpen over: ${rollsLeft}`;
-    rollButton.addEventListener('click', function(){
-        rollsLeft--;
-        rollButton.textContent = `Worpen over: ${rollsLeft}`;
-    });
-}else{
-    turn.textContent = `${Player2} is aan de beurt, succes!`;
-        rollButton.textContent = `Worpen over: ${rollsLeft}`;
-    rollButton.addEventListener('click', function(){
-        rollsLeft--;
-        rollButton.textContent = `Worpen over: ${rollsLeft}`;
-    })};
