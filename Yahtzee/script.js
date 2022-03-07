@@ -15,18 +15,48 @@ const nextTurnButton = document.querySelector('#nextTurn');
 nextTurnButton.textContent = 'Volgende beurt';
 rollButton.textContent = `Worpen over: ${rollsLeft}`;
 turn.textContent = 'Klik op volgende beurt!';
+const D1 = document.querySelector('.dice1');
+const D2 = document.querySelector('.dice2');
+const D3 = document.querySelector('.dice3');
+const D4 = document.querySelector('.dice4');
+const D5 = document.querySelector('.dice5');
+const Die = [D1, D2, D3, D4 ,D5];
+D1.src = 'Dice0.png';
+D2.src = 'Dice0.png';
+D3.src = 'Dice0.png';
+D4.src = 'Dice0.png';
+D5.src = 'Dice0.png';
+
 nextTurnButton.addEventListener('click', function(){
-if(turnSelector % 2 == 0){
+    if(turnSelector % 2 == 0){
     rollsLeft = 3;
     turn.textContent = `${Player1} is aan de beurt!`;
     turnSelector++;
     rollButton.textContent = `Worpen over: ${rollsLeft}`;
     rollButton.classList.remove('hidden');
+    D1.src = 'Dice0.png';
+    D2.src = 'Dice0.png';
+    D3.src = 'Dice0.png';
+    D4.src = 'Dice0.png';
+    D5.src = 'Dice0.png';
+    for(let z = 0; z < 5; z++){
+        Die[z].classList.add('notSelected');
+        holdDices[z] = 0;
+    }
 } else { rollsLeft = 3;
 turn.textContent = `${Player2} is aan de beurt!`;
 rollButton.textContent = `Worpen over: ${rollsLeft}`; 
 turnSelector++
 rollButton.classList.remove('hidden');
+D1.src = 'Dice0.png';
+D2.src = 'Dice0.png';
+D3.src = 'Dice0.png';
+D4.src = 'Dice0.png';
+D5.src = 'Dice0.png';
+for(let z = 0; z < 5; z++){
+    Die[z].classList.add('notSelected');
+    holdDices[z] = 0;
+}
 }});
 
 let p1scoreTop = 0;
@@ -65,18 +95,6 @@ let p2GStraat = 0;
 let p2Yahtzee = 0;
 let p2Chance = 0;
 
-const D1 = document.querySelector('.dice1');
-const D2 = document.querySelector('.dice2');
-const D3 = document.querySelector('.dice3');
-const D4 = document.querySelector('.dice4');
-const D5 = document.querySelector('.dice5');
-const Die = [D1, D2, D3, D4 ,D5];
-D1.src = 'Dice0.png';
-D2.src = 'Dice0.png';
-D3.src = 'Dice0.png';
-D4.src = 'Dice0.png';
-D5.src = 'Dice0.png';
-
 rollButton.addEventListener('click', function(){
     rollsLeft--;
     rollButton.textContent = `Worpen over: ${rollsLeft}`; 
@@ -97,7 +115,7 @@ D1.addEventListener('click', function(){
         D1.classList.remove('notSelected');
         holdDices[0] = Dices[0];
     } else {D1.classList.add('notSelected');
-    holdDices[0]--;
+    holdDices[0] = 0;
 }});
 D2.addEventListener('click', function(){
     if(D2.classList.contains('notSelected')){
@@ -109,7 +127,7 @@ D2.addEventListener('click', function(){
 D3.addEventListener('click', function(){
     if(D3.classList.contains('notSelected')){
         D3.classList.remove('notSelected');
-        Dices[2] = holdDices[2];
+        holdDices[2] = Dices[2];
     } else {D3.classList.add('notSelected');
     holdDices[2] = 0;
 }});
