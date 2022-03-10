@@ -58,24 +58,6 @@
 #rollAgain:active{
     background-color: rgb(133, 133, 133);
 }
-#nextTurn{
-    position: absolute;
-    right:22vw;
-    top: 3vh;
-    border-radius: 50px;
-    border: solid black 2px;
-    background-color: white;
-    width: 200px;
-    height: 30px;
-    font-size: large;
-    line-height: 25px;
-}
-#nextTurn:hover{
-    background-color: rgb(192, 192, 192);
-}
-#nextTurn:active{
-    background-color: rgb(133, 133, 133);
-}
 .p1, .p2{
     position: absolute;
     font-size: x-large;
@@ -157,4 +139,14 @@
 }
 .hidden{
     visibility: hidden;
+}
+
+.possible{
+    color: red;
+    text-align: center;
+}
+.definitive{
+    color:black;
+    text-decoration: bolder;
+    text-align: center;
 }

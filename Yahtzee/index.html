@@ -11,7 +11,7 @@
     <div class="top-info-row">
         <h2 id="turn">turn</h2>
         <button id="rollAgain" class=""></button>
-        <button id="nextTurn" class=""></button>
+
 <!--Developer tool-->
 <button id="Dev-button">Developer</button>
         <p class="p1">Player 1</p>
@@ -55,8 +55,8 @@
                 <div class="score">
                     <p>tel alle enen</p>
                 </div>
-                <div class="score">
-                    <p id="score-enen"></p>
+                <div class="p1score1D score">
+                    <p class="p1score-enen possible">0</p>
                 </div>
         </div>
         <div class="p1scores2 scores">
@@ -67,8 +67,8 @@
                 <div class="score">
                     <p>tel alle tweeën</p>
                 </div>
-                <div class="score">
-                    <p id="score-tweeën"></p>
+                <div class="p1score2D score">
+                    <p class="p1score-tweeën possible">0</p>
                 </div>
         </div>
         <div class="p1scores3 scores">
@@ -79,8 +79,8 @@
                 <div class="score">
                     <p>tel alle drieën</p>
                 </div>
-                <div class="score">
-                    <p id="score-drieën"></p>
+                <div class="p1score3D score">
+                    <p class="p1score-drieën possible">0</p>
                 </div>
         </div>
         <div class="p1scores4 scores">
@@ -91,8 +91,8 @@
             <div class="score">
                 <p>tel alle vieren</p>
             </div>
-            <div class="score">
-                <p id="score-vieren"></p>
+            <div class="p1score4D score">
+                <p class="p1score-vieren possible">0</p>
             </div>
         </div>
         <div class="p1scores5 scores">
@@ -103,8 +103,8 @@
             <div class="score">
                 <p>tel alle vijfen</p>
             </div>
-            <div class="score">
-                <p id="score-vijfen"></p>
+            <div class="p1score5D score">
+                <p class="p1score-vijfen possible">0</p>
             </div>
         </div>
         <div class="p1scores6 scores">
@@ -115,16 +115,16 @@
             <div class="score">
                 <p>tel alle zessen</p>
             </div>
-            <div class="score">
-                <p id="score-zessen"></p>
+            <div class="p1score6D score">
+                <p class="p1score-zessen possible">0</p>
             </div>
         </div>
         <div class="p1TBoven scores">
             <div class="score tot-scores">
                 <p>Totaal aantal punten</p>
             </div>
-            <div class="score tot-points-boven">
-                <p id="bonus"></p>
+            <div class="score p1TopScoredD">
+                <p class="p1TopScoredP possible">0</p>
             </div>
         </div>
         <div class="p1bonus scores">
@@ -135,16 +135,17 @@
             <div class="score">
                 <p>35 punten</p>
             </div>
-            <div class="score">
-
+            <div class="score p1bonusD">
+                <p class="p1bonusP possible">0</p>
             </div>
         </div>
         <div class="p1TotScoreBoven scores">
             <div class="score tot-scores">
-                <p>Totaal aantal punten (boven)</p>
+                <p>Totaal aantal punten</p>
+                <p>Bovenste helft</p>
             </div>
-            <div class="score">
-                <p id="tot-points-boven"></p>
+            <div class="score p1TopScoredWBD">
+                <p class="p1TopScoredWBP possible">0</p>
             </div>
         </div>
         <div class="info score">
@@ -158,8 +159,8 @@
             <div class="score">
                 <p>Totaal v.d stenen</p>
             </div>
-            <div class="score">
-
+            <div class="p1ToKD score">
+                <p class="p1ToKP possible">0</p>
             </div>
         </div>
         <div class="p1Caree scores">
@@ -170,8 +171,8 @@
             <div class="score">
                 <p>Totaal v.d stenen</p>
             </div>
-            <div class="score">
-
+            <div class="p1CareeD score">
+                <p class="p1CareeP possible">0</p>
             </div>
         </div>
         <div class="p1FullHouse scores">
@@ -182,8 +183,8 @@
             <div class="score">
                 <p>25 punten</p>
             </div>
-            <div class="score">
-
+            <div class="p1FullHouseD score">
+                <p class="p1FullHouseP possible">0</p>
             </div>
         </div>
         <div class="p1KStraat scores">
@@ -194,8 +195,8 @@
             <div class="score">
                 <p>30 punten</p>
             </div>
-            <div class="score">
-
+            <div class="p1KStraatD score">
+                <P class="p1KStraatP possible">0</P>
             </div>
         </div>
         <div class="p1GStraat scores">
@@ -206,8 +207,8 @@
             <div class="score">
                 <p>40 punten</p>
             </div>
-            <div class="score">
-
+            <div class="p1GStraatD score">
+                <P class="p1GStraatP possible">0</P>
             </div>
         </div>
         <div class="p1Yahtzee scores">
@@ -218,8 +219,8 @@
             <div class="score">
                 <p>50 punten</p>
             </div>
-            <div class="score">
-
+            <div class="p1YahtzeeD score">
+                <p class="possible p1YahtzeeP">0</p>
             </div>
         </div>
         <div class="p1Chance scores">
@@ -230,8 +231,8 @@
             <div class="score">
                 <p>Totaal v.d stenen</p>
             </div>
-            <div class="score">
-
+            <div class="score p1ChanceD">
+                <p class="possible p1ChanceP">0</p>
             </div>
         </div>
         <div class="p1TotScoreOnder scores">
@@ -239,8 +240,8 @@
                 <p>Totaal aantal punten</p>
                 <p>Onderste helft</p>
             </div>
-            <div class="score">
-                
+            <div class="score p1BottomScoredD">
+                <p class="possible p1BottomScoredP">0</p>
             </div>
         </div>
         <div class="p1TotaleScore scores">
@@ -248,8 +249,8 @@
                 <p>Totaal aantal punten</p>
                 <p>Totaal boven + onder</p>
             </div>
-            <div class="score">
-
+            <div class="score p1TotaalD">
+                <p class="p1TotaalP possible">0</p>
             </div>
         </div>
         </div>
@@ -275,8 +276,8 @@
                 <div class="score">
                     <p>tel alle enen</p>
                 </div>
-                <div class="score">
-                    <p id="score-enen"></p>
+                <div class="p2score1D score">
+                    <p class="p2score-enen possible">0</p>
                 </div>
         </div>
         <div class="p2scores2 scores">
@@ -287,8 +288,8 @@
                 <div class="score">
                     <p>tel alle tweeën</p>
                 </div>
-                <div class="score">
-                    <p id="score-tweeën"></p>
+                <div class="p2score2D score">
+                    <p class="p2score-tweeën possible">0</p>
                 </div>
         </div>
         <div class="p2scores3 scores">
@@ -299,8 +300,8 @@
                 <div class="score">
                     <p>tel alle drieën</p>
                 </div>
-                <div class="score">
-                    <p id="score-drieën"></p>
+                <div class="p2score3D score">
+                    <p class="p2score-drieën possible">0</p>
                 </div>
         </div>
         <div class="p2scores4 scores">
@@ -311,8 +312,8 @@
             <div class="score">
                 <p>tel alle vieren</p>
             </div>
-            <div class="score">
-                <p id="score-vieren"></p>
+            <div class="p2score4D score">
+                <p class="p2score-vieren possible">0</p>
             </div>
         </div>
         <div class="p2scores5 scores">
@@ -323,8 +324,8 @@
             <div class="score">
                 <p>tel alle vijfen</p>
             </div>
-            <div class="score">
-                <p id="score-vijfen"></p>
+            <div class="p2score5D score">
+                <p class="p2score-vijfen possible">0</p>
             </div>
         </div>
         <div class="p2scores6 scores">
@@ -335,16 +336,16 @@
             <div class="score">
                 <p>tel alle zessen</p>
             </div>
-            <div class="score">
-                <p id="score-zessen"></p>
+            <div class="p2score6D score">
+                <p class="p2score-zessen possible">0</p>
             </div>
         </div>
         <div class="p2TBoven scores">
             <div class="score tot-scores">
                 <p>Totaal aantal punten</p>
             </div>
-            <div class="score tot-points-boven">
-                <p id="bonus"></p>
+            <div class="score p2TopScoredD">
+                <p class="p2TopScoredP possible">0</p>
             </div>
         </div>
         <div class="p2bonus scores">
@@ -355,16 +356,17 @@
             <div class="score">
                 <p>35 punten</p>
             </div>
-            <div class="score">
-
+            <div class="score p2BonusD">
+                <p class="p2BonusP possible">0</p>
             </div>
         </div>
         <div class="p2TotScoreBoven scores">
             <div class="score tot-scores">
-                <p>Totaal aantal punten (boven)</p>
+                <p>Totaal aantal punten</p>
+                <p>Bovenste helft</p>
             </div>
-            <div class="score">
-                <p id="tot-points-boven"></p>
+            <div class="score p2TopScoredWBD">
+                <p class="p2TopScoredWBP possible">0</p>
             </div>
         </div>
         <div class="info score">
@@ -378,8 +380,8 @@
             <div class="score">
                 <p>Totaal van de stenen</p>
             </div>
-            <div class="score">
-
+            <div class="p2ToKD score">
+                <p class="p2ToKP possible">0</p>
             </div>
         </div>
         <div class="p2Caree scores">
@@ -390,8 +392,8 @@
             <div class="score">
                 <p>Totaal van de stenen</p>
             </div>
-            <div class="score">
-
+            <div class="p2CareeD score">
+                <p class="p2CareeP possible">0</p>
             </div>
         </div>
         <div class="p2FullHouse scores">
@@ -402,8 +404,8 @@
             <div class="score">
                 <p>25 punten</p>
             </div>
-            <div class="score">
-
+            <div class="p2FullHouseD score">
+                <p class="p2FullHouseP possible">0</p>
             </div>
         </div>
         <div class="p2KStraat scores">
@@ -414,8 +416,8 @@
             <div class="score">
                 <p>30 punten</p>
             </div>
-            <div class="score">
-
+            <div class="p2KStraatD score">
+                <p class="p2KStraatP possible">0</p>
             </div>
         </div>
         <div class="p2GStraat scores">
@@ -426,8 +428,8 @@
             <div class="score">
                 <p>40 punten</p>
             </div>
-            <div class="score">
-
+            <div class="p2GStraatD score">
+                <p class="p2GStraatP possible">0</p>
             </div>
         </div>
         <div class="p2Yahtzee scores">
@@ -438,8 +440,8 @@
             <div class="score">
                 <p>50 punten</p>
             </div>
-            <div class="score">
-
+            <div class="p2YahtzeeD score">
+                <p class="possible p2YahtzeeP">0</p>
             </div>
         </div>
         <div class="p2Chance scores">
@@ -447,10 +449,10 @@
                 <p>Chance</p>
             </div>
             <div class="score">
-                <p>Totaal van de stenen</p>
+                <p>Totaal v.d stenen</p>
             </div>
-            <div class="score">
-
+            <div class="score p2ChanceD">
+                <p class="possible p2ChanceP">0</p>
             </div>
         </div>
         <div class="p2TotScoreOnder scores">
@@ -458,8 +460,8 @@
                 <p>Totaal aantal punten</p>
                 <p>Onderste helft</p>
             </div>
-            <div class="score">
-                
+            <div class="score p2BottomScoredD">
+                <p class="possible p2BottomScoredP">0</p>
             </div>
         </div>
         <div class="p2TotaleScore scores">
@@ -467,8 +469,8 @@
                 <p>Totaal aantal punten</p>
                 <p>Totaal boven + onder</p>
             </div>
-            <div class="score">
-
+            <div class="score p2TotaalD">
+                <p class="p2TotaalP possible">0</p>
             </div>
         </div>
         </div>    
