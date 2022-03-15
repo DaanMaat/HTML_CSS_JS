@@ -141,7 +141,7 @@
     visibility: hidden;
 }
 
-.possible{
+.p1Possible, .p2Possible{
     color: red;
     text-align: center;
 }
